@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            max-width: 600px;
+            width: 100%;
+            margin: 20px auto;
+        }
+
+        .day {
+            width: 80%;
+            padding: 5px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .day:hover {
+            background-color: #f0f0f0;
+        }
+
+        .day span {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .day img{
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+
+        /* .day .gift {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #fff;
+            background-color: #3498db;
+            border: 2px solid #2980b9;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+        } */
+
+        .modal {
+            display: none; /* 초기에는 숨겨진 상태 */
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        /* 배경을 덮는 레이어 스타일 */
+        .modal-overlay {
+            display: none; /* 초기에는 숨겨진 상태 */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+    </style>
+    <title>Advent Calendar</title>
+</head>
+<body>
+   
+    <div class="calendar">
+        <!-- Day 1 -->
+        <div id="day1" class="day">
+        </div>
+        <!-- Day 2 -->
+        <div id="day2" class="day">
+        </div>
+        <!-- Day 3 -->
+        <div id="day3" class="day">
+        </div>
+        <!-- Day 4 -->
+        <div id="day4" class="day">
+        </div>
+        <!-- Day 5 -->
+        <div id="day5" class="day">
+        </div>
+        <!-- Day 6 -->
+        <div id="day6" class="day">
+        </div>
+        <!-- Day 7 -->
+        <div id="day7" class="day">
+        </div>
+        <!-- Day 8 -->
+        <div id="day8" class="day">
+        </div>
+        <!-- Day 9 -->
+        <div id="day9" class="day">
+        </div>
+        <!-- Day 10 -->
+        <div id="day10" class="day">
+        </div>
+        <!-- Day 11 -->
+        <div id="day11" class="day">
+        </div>
+        <!-- Day 12 -->
+        <div id="day12" class="day">
+        </div>
+        <!-- Day 13 -->
+        <div id="day13" class="day">
+        </div>
+        <!-- Day 14 -->
+        <div id="day14" class="day">
+        </div>
+        <!-- Day 15 -->
+        <div id="day15" class="day">
+        </div>
+        <!-- Day 16 -->
+        <div id="day16" class="day">
+        </div>
+        <!-- Day 17 -->
+        <div id="day17" class="day">
+        </div>
+        <!-- Day 18 -->
+        <div id="day18" class="day">
+        </div>
+        <!-- Day 19 -->
+        <div id="day19" class="day">
+        </div>
+        <!-- Day 20 -->
+        <div id="day20" class="day">
+        </div>
+        <!-- Day 21 -->
+        <div id="day21" class="day">
+        </div>
+        <!-- Day 22 -->
+        <div id="day22" class="day">
+        </div>
+        <!-- Day 23 -->
+        <div id="day23" class="day">
+        </div>
+        <!-- Day 24 -->
+        <div id="day24" class="day">
+        </div>
+        <!-- Day 25 -->
+        <div id="day25" class="day">
+        </div>
+
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal" id="quizModal">
+        <!-- 퀴즈 내용 및 양식을 여기에 추가 -->
+        <p>이곳에 퀴즈 내용을 추가하세요.</p>
+        <button onclick="closeModal()">닫기</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
