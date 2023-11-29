@@ -1,5 +1,5 @@
-
 $(document).ready(function () {
+
     const myDate = new Date(); 
     const xmas = Date.parse("Dec 25, "+myDate.getFullYear()) 
     const today = Date.parse(myDate) 
@@ -7,24 +7,26 @@ $(document).ready(function () {
     const daysToChristmas = Math.round((xmas-today)/(1000*60*60*24)) 
 
 
-    // if (daysToChristmas == 0) 
-    // $('#days').text("It's Christmas!! Merry Christmas!");
+    if (daysToChristmas == 0) 
+    $('#days').text("It's Christmas!! Merry Christmas!");
 
-    // if (daysToChristmas < 0) 
-    // $('#days').text("Christmas was "+-1*(daysToChristmas)+" days ago.");
+    if (daysToChristmas < 0) 
+    $('#days').text("Christmas was "+-1*(daysToChristmas)+" days ago.");
 
-    // if (daysToChristmas > 0) {
-    //     $('#days').text(daysToChristmas+" days to Christmas!");
-    //     console.log('hi')
-    // }
+    if (daysToChristmas > 0) 
+    $('#days').text(daysToChristmas+" days to Christmas!");
 
+    var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
     //make snow
-    snowDrop(50, randomInt(100, 200));
-    snow(150, 150);    
+    console.log(windowWidth)
+    snowDrop(150, randomInt(0, windowWidth));
+    snow(150, 150);
+
+    setTimeout(function() {
+        window.location.href = './calendar.html';
+    }, 10000);
 });
-
-
 
 function snow(num, speed) {
 		if (num > 0) {
@@ -37,7 +39,7 @@ function snow(num, speed) {
 	};
 
 	function snowDrop(num, position) {
-		var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 		if (num > 0) {
 			var drop = '<div class="drop snow" id="drop_' + num + '"></div>';
 
