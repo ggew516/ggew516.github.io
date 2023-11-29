@@ -84,8 +84,9 @@ function decryptDay2(key){
     
         const decryptedText = await decryptText(encryptedText, key);
         console.log("복호화된 텍스트:", decryptedText);
+        go_msg(decryptedText)
     })();
-    return decryptText
+    
 }
 
 function decryptDay3(key){
@@ -95,8 +96,8 @@ function decryptDay3(key){
     
         const decryptedText = await decryptText(encryptedText, key);
         console.log("복호화된 텍스트:", decryptedText);
+        go_msg(decryptedText)
     })();
-    return decryptText
 }
 
 function decryptDay4(key){
@@ -105,8 +106,8 @@ function decryptDay4(key){
     
         const decryptedText = await decryptText(encryptedText, key);
         console.log("복호화된 텍스트:", decryptedText);
+        go_msg(decryptedText)
     })();
-    return decryptText
 }
 
 function decryptDay5(key){
@@ -115,7 +116,7 @@ function decryptDay5(key){
     
         const decryptedText = await decryptText(encryptedText, key);
         console.log("복호화된 텍스트:", decryptedText);
+        go_msg(decryptedText)
     })();
-    return decryptText
 }
 
