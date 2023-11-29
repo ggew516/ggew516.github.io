@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="back.js"></script>
+    <!-- <script src="back.js"></script> -->
     <script src="letter.js"></script>
     
     <link rel="stylesheet" href="card.css">
@@ -12,7 +12,7 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f2f2f2;
+            background-color: #c46363;
             text-align: center;
         }
 
@@ -75,10 +75,15 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: #fff;
+            background-color: #c24343;
+            color: #fff;
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             z-index: 1000;
+        }
+        
+        .modal input{
+               
         }
 
         /* 배경을 덮는 레이어 스타일 */
@@ -190,11 +195,6 @@
         <input id="answer">
         <button onclick="closeModal()">취소</button>
         <button id="submitAnswer" onclick="closeModal()">제출</button>
-    </div>
-
-    <div class="card" id="card">
-        <p id="msg">사랑해</p>
-        
     </div>
 
 </html>

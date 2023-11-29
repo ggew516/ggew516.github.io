@@ -9,9 +9,7 @@ for(var i=0; i< lines.length; i++){
     var p = document.createElement('p')
     p.textContent = lines[i]
     element.appendChild(p)
+    br = document.createElement('br')
+    element.appendChild(br)
 }
 
-
-
-p.textContent = receivedTxtInfo
-element.appendChild(p)
