@@ -4,8 +4,8 @@
 
 for (let i=1; i<=25; i++){
 
-    // const myDate = new Date(); 
-    const myDate = new Date("2023-12-15"); 
+    const myDate = new Date(); 
+    // const myDate = new Date("2023-12-15"); 
 
     // 이미지 요소 생성
     var imgElement = document.createElement('img');
@@ -23,11 +23,11 @@ for (let i=1; i<=25; i++){
     date = new Date(date_text)
 
     if (myDate < date){
-        divElement.style.backgroundColor = '#888'
+        divElement.style.backgroundColor = '#666'
     } 
-
-
 }
+
+clock = document.getElementById('clock')
 
 
 

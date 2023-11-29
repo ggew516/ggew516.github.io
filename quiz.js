@@ -5,6 +5,7 @@ function openModal() {
 
 // 모달 닫기
 function closeModal() {
+    document.getElementById('answer').value = ''
     document.getElementById('quizModal').style.display = 'none';
     document.getElementById('modalOverlay').style.display = 'none';
 }
@@ -104,8 +105,8 @@ function quizDay5(){
 
 
 $(document).ready(function () {
-    // const myDate = new Date(); 
-    const myDate = new Date("2023-12-25"); 
+    const myDate = new Date(); 
+    // const myDate = new Date("2023-12-25"); 
     const xmas = Date.parse("Dec 25, "+myDate.getFullYear()) 
     const today = Date.parse(myDate) 
 
