@@ -1,16 +1,5 @@
 // insertImage.js
 
-function openModal() {
-    document.getElementById('quizModal').style.display = 'block';
-    document.getElementById('modalOverlay').style.display = 'block';
-}
-
-// 모달 닫기
-function closeModal() {
-    document.getElementById('quizModal').style.display = 'none';
-    document.getElementById('modalOverlay').style.display = 'none';
-}
-
 
 
 for (let i=1; i<=25; i++){
@@ -26,4 +15,3 @@ for (let i=1; i<=25; i++){
     divElement.appendChild(imgElement);
 }
 
-document.getElementById('day1').addEventListener('click', openModal);
