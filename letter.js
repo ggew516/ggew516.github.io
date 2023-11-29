@@ -52,10 +52,8 @@ async function decryptText(encryptedText, key) {
     return decryptedText;
 }
 
-function view_card(msg){
-    
-    document.getElementsByClassName('christmas-card')[0].style.display = 'block';
-    document.getElementById('msg').innerText = msg
+function go_msg(msg){
+    window.location.href = `./msg.html?msg=${encodeURIComponent(msg)}`;
 }
 
 function enc(){
@@ -75,7 +73,7 @@ function decryptDay1(key){
     
         const decryptedText = await decryptText(encryptedText, key);
         console.log("복호화된 텍스트:", decryptedText);
-        view_card(decryptedText)
+        go_msg(decryptedText)
     })();
     
 }

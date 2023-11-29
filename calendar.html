@@ -92,6 +92,9 @@
             background: rgba(0, 0, 0, 0.5);
             z-index: 999;
         }
+
+        
+
     </style>
     <title>Advent Calendar</title>
 </head>
@@ -189,23 +192,9 @@
         <button id="submitAnswer" onclick="closeModal()">제출</button>
     </div>
 
-    <div class="christmas-card">
-        <input id="open" type="checkbox">
-        <label class="open" for="open"></label>
-      <div class="card-front">
-        <div class="christmas-tree"></div>
-        <div class="ribbon"></div>
-        <div class="text">- Click to Open -</div>
-        <div class="star"></div>
-        <div class="balls"></div>
-      </div>
+    <div class="card" id="card">
+        <p id="msg">사랑해</p>
         
-        <div class="card-inside">
-        <!-- <div class="wishes">I hope the magic of Christmas fills every corner of your heart and home with joy — now and always.</div> -->
-        <p id = "msg"></p>
-
-      </div>
     </div>
-
 
 </html>
