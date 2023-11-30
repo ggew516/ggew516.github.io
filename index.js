@@ -10,11 +10,11 @@ $(document).ready(function () {
     if (daysToChristmas == 0) 
     $('#days').text("It's Christmas!! Merry Christmas!");
 
-    if (daysToChristmas < 0) 
-    $('#days').text("Christmas was "+-1*(daysToChristmas)+" days ago.");
+    if (daysToChristmas >= 25) 
+    $('#days').text("Advent Calendars open in December");
 
-    if (daysToChristmas > 0) 
-    $('#days').text("Advent Calendars open in December.");
+    else if (daysToChristmas > 0)
+    $('#days').text(daysToChristmas+" days to Christmas!");
 
     var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
@@ -24,6 +24,7 @@ $(document).ready(function () {
     snow(150, 150);
 
     setTimeout(function() {
+	if (daysToChristmas < 25)
         window.location.href = './calendar.html';
     }, 10000);
 });
