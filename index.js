@@ -13,7 +13,7 @@ $(document).ready(function () {
     if (daysToChristmas < 0) 
     $('#days').text("Christmas was "+-1*(daysToChristmas)+" days ago.");
 
-    if (daysToChristmas <= -25) 
+    if (daysToChristmas > 0) 
     $('#days').text("Advent Calendars open in December.");
 
     var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
