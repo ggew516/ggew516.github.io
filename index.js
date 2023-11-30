@@ -24,7 +24,7 @@ $(document).ready(function () {
     snow(150, 150);
 
     setTimeout(function() {
-	if (daysToChristmas < 25)
+	
         window.location.href = './calendar.html';
     }, 10000);
 });
