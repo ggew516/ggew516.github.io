@@ -4,7 +4,8 @@
 
 for (let i=1; i<=25; i++){
 
-    const myDate = new Date(); 
+    const myDate = new Date();
+    myDate.setHours(myDate.getHours() + 9);
     // const myDate = new Date("2023-12-15"); 
 
     // 이미지 요소 생성

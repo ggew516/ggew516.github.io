@@ -105,7 +105,8 @@ function quizDay5(){
 
 
 $(document).ready(function () {
-    const myDate = new Date(); 
+    const myDate = new Date();
+    myDate.setHours(myDate.getHours() + 9);
     // const myDate = new Date("2023-12-25"); 
     const xmas = Date.parse("Dec 25, "+myDate.getFullYear()) 
     const today = Date.parse(myDate) 
