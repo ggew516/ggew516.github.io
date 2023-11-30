@@ -4,7 +4,7 @@ $(document).ready(function () {
     const xmas = Date.parse("Dec 25, "+myDate.getFullYear()) 
     const today = Date.parse(myDate) 
 
-    const daysToChristmas = Math.floor((xmas-today)/(1000*60*60*24)) 
+    const daysToChristmas = Math.ceil((xmas-today)/(1000*60*60*24)) 
 
 
     if (daysToChristmas == 0) 
