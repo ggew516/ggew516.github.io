@@ -23,11 +23,17 @@ $(document).ready(function () {
     snowDrop(150, randomInt(0, windowWidth));
     snow(150, 150);
 
-    setTimeout(function() {
-	
-        window.location.href = './calendar.html';
-    }, 10000);
+    var back = document.getElementsByClassName('container')[0]
+    back.addEventListener('click', go_calendar)
+
+    // setTimeout(function() {
+    //     window.location.href = './calendar.html';
+    // }, 10000);
 });
+
+function go_calendar(){
+    window.location.href = './calendar.html';
+}
 
 function snow(num, speed) {
 		if (num > 0) {
