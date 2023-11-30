@@ -4,7 +4,7 @@ $(document).ready(function () {
     const xmas = Date.parse("Dec 25, "+myDate.getFullYear()) 
     const today = Date.parse(myDate) 
 
-    const daysToChristmas = Math.round((xmas-today)/(1000*60*60*24)) 
+    const daysToChristmas = Math.ceil((xmas-today)/(1000*60*60*24)) 
 
 
     if (daysToChristmas == 0) 
@@ -13,8 +13,8 @@ $(document).ready(function () {
     if (daysToChristmas < 0) 
     $('#days').text("Christmas was "+-1*(daysToChristmas)+" days ago.");
 
-    if (daysToChristmas > 0) 
-    $('#days').text(daysToChristmas+" days to Christmas!");
+    if (daysToChristmas <= -25) 
+    $('#days').text("Advent Calendars open in December.");
 
     var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
