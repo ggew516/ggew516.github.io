@@ -5,9 +5,21 @@ function openModal() {
 
 // 모달 닫기
 function closeModal() {
+    console.trace()
     document.getElementById('answer').value = ''
     document.getElementById('quizModal').style.display = 'none';
     document.getElementById('modalOverlay').style.display = 'none';
+    
+        // 현재 버튼 요소 가져오기
+    var currentButton = document.getElementById("submitAnswer");
+
+    // 새로운 노드 생성 (기존 노드를 복제하여 새로운 노드를 만들어도 됨)
+    var newButton = currentButton.cloneNode(true);
+
+    // 이벤트 리스너가 없는 버튼으로 교체
+    currentButton.parentNode.replaceChild(newButton, currentButton);
+
+
 }
 
 function hash(str) {
@@ -73,6 +85,64 @@ function answerDay5(){
     }
 }
 
+function answerDay6(){
+    key = document.getElementById('answer').value
+    hashed_key = hash(key).toString()
+    if(hash(hashed_key) == '50455962'){
+        new_key = hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString()
+        decryptDay6(parseInt(new_key.substring(0, 16)))
+    }else{
+        closeModal()
+    }
+}
+
+function answerDay7(){
+    key = document.getElementById('answer').value
+    console.log(key)
+    hashed_key = hash(key).toString()
+    if(hash(hashed_key) == '1514310'){
+        new_key = hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString()
+        decryptDay7(parseInt(new_key.substring(0, 16)))
+    }else{
+        closeModal()
+    }
+}
+
+function answerDay8(){
+    key = document.getElementById('answer').value
+    hashed_key = hash(key).toString()
+    if(hash(hashed_key) == '334714957'){
+        new_key = hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString()
+        decryptDay8(parseInt(new_key.substring(0, 16)))
+    }else{
+        closeModal()
+    }
+}
+
+function answerDay9(){
+    key = document.getElementById('answer').value
+    hashed_key = hash(key).toString()
+    if(hash(hashed_key) == '1513189'){
+        new_key = hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString()
+        decryptDay9(parseInt(new_key.substring(0, 16)))
+    }else{
+        closeModal()
+    }
+}
+
+
+function answerDay10(){
+    key = document.getElementById('answer').value
+    hashed_key = hash(key).toString()
+    if(hash(hashed_key) == '-2192637552'){
+        new_key = hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString()
+        decryptDay10(parseInt(new_key.substring(0, 16)))
+    }else{
+        closeModal()
+    }
+}
+
+
 function quizDay1(){
     openModal()
     document.getElementById('quizText').textContent = '우리가 처음 사귄 날은? (YYYYMMDD)'
@@ -103,11 +173,132 @@ function quizDay5(){
     document.getElementById('submitAnswer').addEventListener('click', answerDay5);
 }
 
+function quizDay6(){
+    openModal()
+    document.getElementById('quizText').textContent = '우리가 처음으로 시켜먹은 메뉴는?'
+    document.getElementById('submitAnswer').addEventListener('click', answerDay6);
+}
+
+function quizDay7(){
+    openModal()
+    document.getElementById('quizText').textContent = '우리가 2023년 10월 한 달 동안 몇 번의 [사랑해] 를 카톡으로 보냈을까?'
+    document.getElementById('submitAnswer').addEventListener('click', answerDay7);
+}
+
+function quizDay8(){
+    openModal()
+    document.getElementById('quizText').textContent = '우리가 함께한 첫 번째 게임은?'
+    document.getElementById('submitAnswer').addEventListener('click', answerDay8);
+}
+
+function quizDay9(){
+    openModal()
+    document.getElementById('quizText').textContent = '우리가 지금까지 함께 한 게임의 갯수는?'
+    document.getElementById('submitAnswer').addEventListener('click', answerDay9);
+}
+
+function quizDay10(){
+    openModal()
+    document.getElementById('quizText').textContent = '내가 예지를 처음으로 봤을 때 입은 셔츠는 무슨 재질일까?'
+    document.getElementById('submitAnswer').addEventListener('click', answerDay10);
+}
+
+function quizDay11(){
+    openModal()
+    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('submitAnswer').addEventListener('click', answerDay11);
+}
+
+function quizDay12(){
+    openModal()
+    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('submitAnswer').addEventListener('click', answerDay12);
+}
+
+function quizDay13(){
+    openModal()
+    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('submitAnswer').addEventListener('click', answerDay13);
+}
+
+function quizDay14(){
+    openModal()
+    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('submitAnswer').addEventListener('click', answerDay14);
+}
+
+function quizDay15(){
+    openModal()
+    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('submitAnswer').addEventListener('click', answerDay15);
+}
+
+function quizDay16(){
+    openModal()
+    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('submitAnswer').addEventListener('click', answerDay16);
+}
+
+function quizDay17(){
+    openModal()
+    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('submitAnswer').addEventListener('click', answerDay17);
+}
+
+function quizDay18(){
+    openModal()
+    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('submitAnswer').addEventListener('click', answerDay18);
+}
+
+function quizDay19(){
+    openModal()
+    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('submitAnswer').addEventListener('click', answerDay19);
+}
+
+function quizDay20(){
+    openModal()
+    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('submitAnswer').addEventListener('click', answerDay20);
+}
+
+function quizDay21(){
+    openModal()
+    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('submitAnswer').addEventListener('click', answerDay21);
+}
+
+function quizDay22(){
+    openModal()
+    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('submitAnswer').addEventListener('click', answerDay22);
+}
+
+function quizDay23(){
+    openModal()
+    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('submitAnswer').addEventListener('click', answerDay23);
+}
+
+function quizDay24(){
+    openModal()
+    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('submitAnswer').addEventListener('click', answerDay24);
+}
+
+function quizDay25(){
+    openModal()
+    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('submitAnswer').addEventListener('click', answerDay25);
+}
+
 
 $(document).ready(function () {
     const myDate = new Date();
-    myDate.setHours(myDate.getHours() + 9);
     // const myDate = new Date("2023-12-25"); 
+    myDate.setHours(myDate.getHours() + 9);
+    
     const xmas = Date.parse("Dec 25, "+myDate.getFullYear()) 
     const today = Date.parse(myDate) 
 
@@ -152,19 +343,64 @@ $(document).ready(function () {
     if (myDate >= new Date("2023-12-10")){
         document.getElementById('day10').addEventListener('click', quizDay10);    
     }
+
+    if (myDate >= new Date("2023-12-11")){
+        document.getElementById('day11').addEventListener('click', quizDay11);    
+    }
     
+    if (myDate >= new Date("2023-12-12")){
+        document.getElementById('day12').addEventListener('click', quizDay12);    
+    }
 
-    
+    if (myDate >= new Date("2023-12-13")){
+        document.getElementById('day13').addEventListener('click', quizDay13);    
+    }
 
-    // if (daysToChristmas == 0) 
-    // $('#days').text("It's Christmas!! Merry Christmas!");
+    if (myDate >= new Date("2023-12-14")){
+        document.getElementById('day14').addEventListener('click', quizDay14);    
+    }
 
-    // if (daysToChristmas < 0) 
-    // $('#days').text("Christmas was "+-1*(daysToChristmas)+" days ago.");
+    if (myDate >= new Date("2023-12-15")){
+        document.getElementById('day15').addEventListener('click', quizDay15);    
+    }
 
-    // if (daysToChristmas > 0) {
-    //     $('#days').text(daysToChristmas+" days to Christmas!");
-    //     console.log('hi')
-    // }
+    if (myDate >= new Date("2023-12-16")){
+        document.getElementById('day16').addEventListener('click', quizDay16);    
+    }
 
+    if (myDate >= new Date("2023-12-17")){
+        document.getElementById('day17').addEventListener('click', quizDay17);    
+    }
+
+    if (myDate >= new Date("2023-12-18")){
+        document.getElementById('day18').addEventListener('click', quizDay18);    
+    }
+
+    if (myDate >= new Date("2023-12-19")){
+        document.getElementById('day19').addEventListener('click', quizDay19);    
+    }
+
+    if (myDate >= new Date("2023-12-20")){
+        document.getElementById('day20').addEventListener('click', quizDay20);    
+    }
+
+    if (myDate >= new Date("2023-12-21")){
+        document.getElementById('day21').addEventListener('click', quizDay21);    
+    }
+
+    if (myDate >= new Date("2023-12-22")){
+        document.getElementById('day22').addEventListener('click', quizDay22);    
+    }
+
+    if (myDate >= new Date("2023-12-23")){
+        document.getElementById('day23').addEventListener('click', quizDay23);    
+    }
+
+    if (myDate >= new Date("2023-12-24")){
+        document.getElementById('day24').addEventListener('click', quizDay24);    
+    }
+
+    if (myDate >= new Date("2023-12-25")){
+        document.getElementById('day25').addEventListener('click', quizDay25);    
+    }
 });
