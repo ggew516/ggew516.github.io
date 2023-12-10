@@ -13,3 +13,12 @@ for(var i=0; i< lines.length; i++){
     element.appendChild(br)
 }
 
+
+var backgruound = urlParams.get('background');
+
+if(backgruound != null){
+    backgruound = backgruound.toString()
+    element = document.getElementsByTagName('body')[0]
+    element.style.backgroundColor = backgruound.toString()
+}
+

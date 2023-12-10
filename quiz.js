@@ -142,6 +142,71 @@ function answerDay10(){
     }
 }
 
+function answerDay11(){
+    key = document.getElementById('answer').value
+    hashed_key = hash(key).toString()
+    if(hash(hashed_key) == '49742191'){
+        new_key = hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString()
+        decryptDay11(parseInt(new_key.substring(0, 16)))
+    }else{
+        closeModal()
+    }
+}
+
+function answerDay12(){
+    key = document.getElementById('answer').value
+    hashed_key = Math.abs(hash(key)).toString()
+    if(hash(hashed_key) == '-5467003299'){
+        new_key = hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString()
+        decryptDay12(parseInt(new_key.substring(0, 16)))
+    }else{
+        closeModal()
+    }
+}
+
+function answerDay13(){
+    key = document.getElementById('answer').value
+    hashed_key = Math.abs(hash(key)).toString()
+    if(hash(hashed_key) == '99302246'){
+        new_key = hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString()
+        decryptDay13(parseInt(new_key.substring(0, 16)))
+    }else{
+        closeModal()
+    }
+}
+
+function answerDay14(){
+    key = document.getElementById('answer').value
+    hashed_key = Math.abs(hash(key)).toString()
+    if(hash(hashed_key) == '1697'){
+        new_key = hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString()
+        decryptDay14(parseInt(new_key.substring(0, 16)))
+    }else{
+        closeModal()
+    }
+}
+
+function answerDay15(){
+    key = document.getElementById('answer').value
+    hashed_key = Math.abs(hash(key)).toString()
+    if(hash(hashed_key) == '50454103'){
+        new_key = hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString()
+        decryptDay15(parseInt(new_key.substring(0, 16)))
+    }else{
+        closeModal()
+    }
+}
+
+function answerDay16(){
+    key = document.getElementById('answer').value
+    hashed_key = Math.abs(hash(key)).toString()
+    if(hash(hashed_key) == '-2221423416'){
+        new_key = hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString()
+        decryptDay16(parseInt(new_key.substring(0, 16)))
+    }else{
+        closeModal()
+    }
+}
 
 function quizDay1(){
     openModal()
@@ -205,37 +270,37 @@ function quizDay10(){
 
 function quizDay11(){
     openModal()
-    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('quizText').textContent = '나의 퍼스널 컬러의 계절은?'
     document.getElementById('submitAnswer').addEventListener('click', answerDay11);
 }
 
 function quizDay12(){
     openModal()
-    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('quizText').textContent = '곰이 구르면?'
     document.getElementById('submitAnswer').addEventListener('click', answerDay12);
 }
 
 function quizDay13(){
     openModal()
-    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('quizText').textContent = '통모짜핫도그의 반대말은?'
     document.getElementById('submitAnswer').addEventListener('click', answerDay13);
 }
 
 function quizDay14(){
     openModal()
-    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('quizText').textContent = '우리가 미쁘동을 몇 번이나 갔을까?'
     document.getElementById('submitAnswer').addEventListener('click', answerDay14);
 }
 
 function quizDay15(){
     openModal()
-    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('quizText').textContent = '내가 예지 머리 냄새를 맡아도 될까?'
     document.getElementById('submitAnswer').addEventListener('click', answerDay15);
 }
 
 function quizDay16(){
     openModal()
-    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('quizText').textContent = '우리의 첫 여행지는?'
     document.getElementById('submitAnswer').addEventListener('click', answerDay16);
 }
 
