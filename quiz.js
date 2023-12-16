@@ -208,6 +208,17 @@ function answerDay16(){
     }
 }
 
+function answerDay17(){
+    key = document.getElementById('answer').value
+    hashed_key = Math.abs(hash(key)).toString()
+    if(hash(hashed_key) == '-2193537113'){
+        new_key = hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString()
+        decryptDay17(parseInt(new_key.substring(0, 16)))
+    }else{
+        closeModal()
+    }
+}
+
 function quizDay1(){
     openModal()
     document.getElementById('quizText').textContent = '우리가 처음 사귄 날은? (YYYYMMDD)'

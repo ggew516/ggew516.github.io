@@ -62,8 +62,8 @@ function go_msg_color(msg, color){
 
 function enc(){
     (async () => {
-        txt = '안녕 예지야.\n\n기억나?\n\n우리의 첫 여행?\n\n도착해서 점심으로 뼈해장국먹고...\n\n저녁으로는 회시켜먹고...\n\n밤바다 보고... 커피도 사먹구...\n\n커피집에는 [커피는 악마처럼 검고 지옥처럼 뜨거우며 천사와 같이 순수하고 사랑처럼 달콤하다] 라고 쓰여있었어.\n\n기억력 좋지!?\n\n그리고나서 밤바다도 구경했지.\n\n아! 여행 다 끝나고 돌아올 때는 예지가 핸드폰을 고터에 두고와서 찾으러 돌아갔는데!\n\n예지가 일본에 핸드폰을 두고와도 찾으러 갔다올 수 있어.\n\n사랑해 예지야\n\n'
-        key = 1413140141314014
+        txt = '안녕 예지야.\n\n오늘은 우리가 사귄지 1200일 되는 날이야!\n\n계속 사랑해줘서 고마워 예지야.\n\n12000일에도 120000일에도!\n\n사랑해줘.\n\n사랑해 예지야.\n\n'
+        key = 1509345150934515
         const encryptedText = await encryptText(txt, key);
         console.log("암호화된 텍스트:", encryptedText);
     })();
@@ -235,7 +235,7 @@ function decryptDay16(key){
 
 function decryptDay17(key){
     (async () => {
-        encryptedText = 'xi/EFoE5OLHQqB0+UGQLuCDzuIae6eV4d9aLe36u/j3QvFBklQqjOScaa18u/Hjgl4nzq/PIQyWtevEQEUNPiwjmJzIaAqKkgMaRTYfBV5QatIwiuU3JBws9udUESu5AHSfi5H9sAGwv59XpAtO3jSnPA6UDIXCJ+/PR1tvoW4E2w7/DgfY5uqcV1yu46gfsXKEpjoByXpU1UmfoBAdozx3lG5r32P9na3P6OiJBuEbaCVd5KQRPaysmGfxZFrAyyDyje/gHG8YpOPnP3m/qo/V44/mqtmWRPgyCVR0GkDkPGoF1gvYZK7Hgc3P+YikZawlY13p5/gh5A2rpVidN7Pos4RZ0AlfM9Dmbmfwp80I='  
+        encryptedText = 'w2Ujwdv6yO+T/2JZ1TRaxRTaBGjh8IqF29sPGTpW/k5O06ymuW6Unt3+eExQQ6sAvj4vFP+wMJqBzRKzHqCLZDCTsXHcrZ1o7wiEFnbu8Jhd0ZBdUPFl1sr+cqwsmgkMUEXnshxbSkFm4bK5eob+RSR1uqDfE0yxycnRFTkrzZwboydHhiJT3kgKxBlqjtRaYF6YMl5BotHbOt8kQ4WNSuEIdNYG+zTYVtYc0jL7D+F53tzXCU3zf5y98tVJ+gHG'  
     
         const decryptedText = await decryptText(encryptedText, key);
         console.log("복호화된 텍스트:", decryptedText);
