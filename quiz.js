@@ -317,7 +317,7 @@ function quizDay16(){
 
 function quizDay17(){
     openModal()
-    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('quizText').textContent = '오늘은 우리가 사귄지 며칠 째 되는 날일까?'
     document.getElementById('submitAnswer').addEventListener('click', answerDay17);
 }
 
