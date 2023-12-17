@@ -62,8 +62,8 @@ function go_msg_color(msg, color){
 
 function enc(){
     (async () => {
-        txt = '안녕 예지야.\n\n오늘은 우리가 사귄지 1200일 되는 날이야!\n\n계속 사랑해줘서 고마워 예지야.\n\n12000일에도 120000일에도!\n\n사랑해줘.\n\n사랑해 예지야.\n\n'
-        key = 1509345150934515
+        txt = ''
+        key = 1234123412341234
         const encryptedText = await encryptText(txt, key);
         console.log("암호화된 텍스트:", encryptedText);
     })();
@@ -245,7 +245,7 @@ function decryptDay17(key){
 
 function decryptDay18(key){
     (async () => {
-        encryptedText = 'xi/EFoE5OLHQqB0+UGQLuCDzuIae6eV4d9aLe36u/j3QvFBklQqjOScaa18u/Hjgl4nzq/PIQyWtevEQEUNPiwjmJzIaAqKkgMaRTYfBV5QatIwiuU3JBws9udUESu5AHSfi5H9sAGwv59XpAtO3jSnPA6UDIXCJ+/PR1tvoW4E2w7/DgfY5uqcV1yu46gfsXKEpjoByXpU1UmfoBAdozx3lG5r32P9na3P6OiJBuEbaCVd5KQRPaysmGfxZFrAyyDyje/gHG8YpOPnP3m/qo/V44/mqtmWRPgyCVR0GkDkPGoF1gvYZK7Hgc3P+YikZawlY13p5/gh5A2rpVidN7Pos4RZ0AlfM9Dmbmfwp80I='  
+        encryptedText = 'gxCDkXrXGMKjeIe2I1arbKtk4TujQw4J1ckf5RSnqV6yZJSM002l/QQ9qbwHfvdYA2Lje9uyszX6dTeYDkkIDvroMF4JKbIRhMI3gdQ3qcHN26J4OQiQ30UqyBc8aI3Ntu98SNdnYJS97DTXY0F/zXxz1c2AP6ntpBhpY28vzTbtme25BvRO9YaG5ICRV1bvl3AbllvzLwiMB7nr5ny2CkgO/hN8UgJ3rmqOQ9gjs8JAG2lT57OKmSssLs+zFHUeEyaX8JLSEFo81bDv2ZmzT+trn9HFG6XEeGfC14o7xMyarf5jKZKKNW9Sq9PVAEbE4mbBwE3I+L+MGFL0Bd4s12gxOzuiHX1XTlfa/LkbtBU='  
     
         const decryptedText = await decryptText(encryptedText, key);
         console.log("복호화된 텍스트:", decryptedText);
@@ -255,7 +255,7 @@ function decryptDay18(key){
 
 function decryptDay19(key){
     (async () => {
-        encryptedText = 'xi/EFoE5OLHQqB0+UGQLuCDzuIae6eV4d9aLe36u/j3QvFBklQqjOScaa18u/Hjgl4nzq/PIQyWtevEQEUNPiwjmJzIaAqKkgMaRTYfBV5QatIwiuU3JBws9udUESu5AHSfi5H9sAGwv59XpAtO3jSnPA6UDIXCJ+/PR1tvoW4E2w7/DgfY5uqcV1yu46gfsXKEpjoByXpU1UmfoBAdozx3lG5r32P9na3P6OiJBuEbaCVd5KQRPaysmGfxZFrAyyDyje/gHG8YpOPnP3m/qo/V44/mqtmWRPgyCVR0GkDkPGoF1gvYZK7Hgc3P+YikZawlY13p5/gh5A2rpVidN7Pos4RZ0AlfM9Dmbmfwp80I='  
+        encryptedText = 'Tchgbzay52jPFvl3WX0ZAo95ZF4CgSyoVsCRNncEmREyiDVi27t/4cWLF5Emn7G8kDDHDKc+tkwRJGV/1QFLQo96evr1EBu5cBVXzBZ60XNXdzdVRfev1kRDIM3wpq/p8ttzMky5W8rZSXtpMw/N9kWLb+VJJPBtp7CYrmaBIjWK8qAv5IJVZokXrzFtmbE2ZGOHbcFfZ6G93Bc+ghenYvMB1ys1xuChLrYyywUjBSBCILtAbzV4ZpSIktQoicBSvJUBq6EzItDP4LOpgvH9LWBoTR1TYgsJx099nzOYTqnJbbGtg7zxfA090MyKUStt'  
     
         const decryptedText = await decryptText(encryptedText, key);
         console.log("복호화된 텍스트:", decryptedText);
@@ -265,7 +265,7 @@ function decryptDay19(key){
 
 function decryptDay20(key){
     (async () => {
-        encryptedText = 'xi/EFoE5OLHQqB0+UGQLuCDzuIae6eV4d9aLe36u/j3QvFBklQqjOScaa18u/Hjgl4nzq/PIQyWtevEQEUNPiwjmJzIaAqKkgMaRTYfBV5QatIwiuU3JBws9udUESu5AHSfi5H9sAGwv59XpAtO3jSnPA6UDIXCJ+/PR1tvoW4E2w7/DgfY5uqcV1yu46gfsXKEpjoByXpU1UmfoBAdozx3lG5r32P9na3P6OiJBuEbaCVd5KQRPaysmGfxZFrAyyDyje/gHG8YpOPnP3m/qo/V44/mqtmWRPgyCVR0GkDkPGoF1gvYZK7Hgc3P+YikZawlY13p5/gh5A2rpVidN7Pos4RZ0AlfM9Dmbmfwp80I='  
+        encryptedText = 'GRdcehb9mb0PqV8KHbZvJlH9eYsfPW9LaWT9UVk6wGIp6uszAm0exRm7bY3RnRbegHE/qBpwaFJLcgKWXkHNYNdoTmWOn4IhgqICNQBnniurbHa86J6x3KUnT6VysTIxlf7r8I3KOZ91zmc9lDgBqcoZcNnXjDmh5gkTCih7eG2gHO4Mv5yg5nag1UGhm31cTPaPlM7zvbDvsXnEuIvhkQpg3Lu+codYfrhE+I6HTklhe0j4ncX20Cq0tI3gQD/OZdRxxDz2+oXFpFnsY0UpwcHalC2ALi+PCf0XlZnS7gl6XPiY4aKiwPHvKb5tcQyPz5WdQVgMiUw9S1PYrh1T30vOWsFM0wXXxQH3GohWJQh0LzrpDbo7mwyUzoawz/t9lcbFzAbxzbAI3D1YVExe3IZPswPprGa6PEdlIVi0fwFzi8nOHyeS0Dh0KgDdy3FOE5kEQLY9CqzZ90EVZzX+BRTKyQp6PTsxOQRyZusayem3YIcOJeSfoaZ1CKbQFLZB'  
     
         const decryptedText = await decryptText(encryptedText, key);
         console.log("복호화된 텍스트:", decryptedText);
@@ -275,7 +275,7 @@ function decryptDay20(key){
 
 function decryptDay21(key){
     (async () => {
-        encryptedText = 'xi/EFoE5OLHQqB0+UGQLuCDzuIae6eV4d9aLe36u/j3QvFBklQqjOScaa18u/Hjgl4nzq/PIQyWtevEQEUNPiwjmJzIaAqKkgMaRTYfBV5QatIwiuU3JBws9udUESu5AHSfi5H9sAGwv59XpAtO3jSnPA6UDIXCJ+/PR1tvoW4E2w7/DgfY5uqcV1yu46gfsXKEpjoByXpU1UmfoBAdozx3lG5r32P9na3P6OiJBuEbaCVd5KQRPaysmGfxZFrAyyDyje/gHG8YpOPnP3m/qo/V44/mqtmWRPgyCVR0GkDkPGoF1gvYZK7Hgc3P+YikZawlY13p5/gh5A2rpVidN7Pos4RZ0AlfM9Dmbmfwp80I='  
+        encryptedText = 'FDoWEwD72fqtsMO7cIRroVHmEMNpltFXx54ywYr+jid5RbEQPEKsGjyh5sWgCOFXnyYtaymwFK6drRmybb7b0niu647RhiHAj2KbH0m99CzAJA+invwgWyoUzysw6sYj88J1tSs5Licy6jjgqfSx4q7aKsFWHvoi7fSQj0mmsIsOOMXG7VamQOG2Q1NBtaKfsx6iLS35AzTn8hQ0pJ7nYeMzPUAbde8SlEdHXn2DoNJVc+kDqD0j6HJxWVkCjCZsHoRtFwwoP94vsTDIXxjaMAADSPZiAvLzHKHYeWTsFJu9sO4b9+bAe5WhVgmfRHMSsW1PNAistiUvSJW1hzh1LCMShRbuS4AzstFksEGqmp2OmuA1SxE6wPn5rxPyPqBJFd59GM8OP6/zZD9RHzYXCwCdv4tztalcOldXE9pt2HmMGzrRDcC8xuTZ7qzRammrxjxm5J1ynFnIeFxf6GZmwmQIAVvcHxwZSJ/m5gnVI0lDWMCVhVEpePhPuoR1ZWZY'  
     
         const decryptedText = await decryptText(encryptedText, key);
         console.log("복호화된 텍스트:", decryptedText);
@@ -285,8 +285,7 @@ function decryptDay21(key){
 
 function decryptDay22(key){
     (async () => {
-        encryptedText = 'xi/EFoE5OLHQqB0+UGQLuCDzuIae6eV4d9aLe36u/j3QvFBklQqjOScaa18u/Hjgl4nzq/PIQyWtevEQEUNPiwjmJzIaAqKkgMaRTYfBV5QatIwiuU3JBws9udUESu5AHSfi5H9sAGwv59XpAtO3jSnPA6UDIXCJ+/PR1tvoW4E2w7/DgfY5uqcV1yu46gfsXKEpjoByXpU1UmfoBAdozx3lG5r32P9na3P6OiJBuEbaCVd5KQRPaysmGfxZFrAyyDyje/gHG8YpOPnP3m/qo/V44/mqtmWRPgyCVR0GkDkPGoF1gvYZK7Hgc3P+YikZawlY13p5/gh5A2rpVidN7Pos4RZ0AlfM9Dmbmfwp80I='  
-    
+        encryptedText = 'mSD6BT1PaSZy/j3I/cqxGjbCyVsvcLbDEvjQbQV6YLlrjg0bWaGc5LaaZUEGtm5D7YxT2Fqdvbsatl99MFpQQZHBWcDnUsH5Odneqy/RJuSvfm07gcqoSEKCBi+oZL+ynigTwDxhOX7Gs+d4zPJC0jWg0ZTRn+xgY6lb95hBM0PQondl+SSVwiBjBtyPPSHZKh+Vi2aiTifUMngE+ky/tbHemJ2V2jn4NSmDLjBGte340DsbGixNv4kcE3UtlfoqAVd7HGBt7BDFSXa85Oeprwjgns5HOeOJ3izZ18JPLRtewKTacT/NrFXnxE6/11R4S3URoe2M64MLNsS6NgEuVtQh8Hqmy+syt3o41vSLCY5tWiljRG7NbCAz1FjdsrZufzpJ7hUhsKmjlhq0itFu8D45C/oeq8efdRo3x2nwMSqyC7V5ZkGIlifBoJbIHK9WGJKOkpNlGvZW9GMUHthk2Q=='    
         const decryptedText = await decryptText(encryptedText, key);
         console.log("복호화된 텍스트:", decryptedText);
         go_msg(decryptedText)
@@ -295,7 +294,7 @@ function decryptDay22(key){
 
 function decryptDay23(key){
     (async () => {
-        encryptedText = 'xi/EFoE5OLHQqB0+UGQLuCDzuIae6eV4d9aLe36u/j3QvFBklQqjOScaa18u/Hjgl4nzq/PIQyWtevEQEUNPiwjmJzIaAqKkgMaRTYfBV5QatIwiuU3JBws9udUESu5AHSfi5H9sAGwv59XpAtO3jSnPA6UDIXCJ+/PR1tvoW4E2w7/DgfY5uqcV1yu46gfsXKEpjoByXpU1UmfoBAdozx3lG5r32P9na3P6OiJBuEbaCVd5KQRPaysmGfxZFrAyyDyje/gHG8YpOPnP3m/qo/V44/mqtmWRPgyCVR0GkDkPGoF1gvYZK7Hgc3P+YikZawlY13p5/gh5A2rpVidN7Pos4RZ0AlfM9Dmbmfwp80I='  
+        encryptedText = 'P2gdw0XKGvDANz64o8NYzvP0N+8WgbjhkjbBt/nlBYnTzz3l13xsyrekYdY36QcYMESYU85nvDzXXCJNet2Rqg9bo660dwgS35K8MHuiaSxxdSfvbEyRAiAzCvaAlJJ4aJZu9rutA9TJItNjFOavlP7bADD0TJ7Lj9F3pueHnbLfYUCZPcTi7wv5b8mBVl29nm3gFG6rcmWzPApS8YKeW+CZQaWFvTWT6V1UnOqK/TX3sJ5Kcruyp2weRxfECNh0'
     
         const decryptedText = await decryptText(encryptedText, key);
         console.log("복호화된 텍스트:", decryptedText);
@@ -305,7 +304,7 @@ function decryptDay23(key){
 
 function decryptDay24(key){
     (async () => {
-        encryptedText = 'xi/EFoE5OLHQqB0+UGQLuCDzuIae6eV4d9aLe36u/j3QvFBklQqjOScaa18u/Hjgl4nzq/PIQyWtevEQEUNPiwjmJzIaAqKkgMaRTYfBV5QatIwiuU3JBws9udUESu5AHSfi5H9sAGwv59XpAtO3jSnPA6UDIXCJ+/PR1tvoW4E2w7/DgfY5uqcV1yu46gfsXKEpjoByXpU1UmfoBAdozx3lG5r32P9na3P6OiJBuEbaCVd5KQRPaysmGfxZFrAyyDyje/gHG8YpOPnP3m/qo/V44/mqtmWRPgyCVR0GkDkPGoF1gvYZK7Hgc3P+YikZawlY13p5/gh5A2rpVidN7Pos4RZ0AlfM9Dmbmfwp80I='  
+        encryptedText = 'SpBgT9y7L4upcBFKnnMxsgj2mF+L/04DwUJMUU7T5yfBkSPwcgOfyDqT/KklL9zlsEo9nlX0im34KK/iV0hx/AlrJqspEChhizbUxctaQZmPDYN83FllRWDw2+d9A4gh0e4YlikI+nbHfXhVHbX4nFy4IvPs/f5j0mPzqlP4Kn2ZpY5uOcJPYquf4c52baANH/28vKO7I8NQ4jaB7w6g2vVS4ZNbe9cycKab3ZhPM/XO4upxdH//xjEUcD2OKRc57Si6A0laRvDygQcdmlMbyNBpEbF+L2DsXJR+49PJTDHFgcVPfFij9VH+HSEhPTEBPKuyw6oM8UmiB4ebZr2zfTMtSp905/H4E/yROpaaycoLsmPRkvd5RLx2m9zxUpiWnrl26c/BvxFDarlR6XVjO5BM+8Hw9xAJry/BEn9Uu2Kf2cYmvNXsUAplFzNenjb8pbNc5A/C7/q32Dxu3W8z3w=='  
     
         const decryptedText = await decryptText(encryptedText, key);
         console.log("복호화된 텍스트:", decryptedText);

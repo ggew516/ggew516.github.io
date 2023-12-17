@@ -219,6 +219,94 @@ function answerDay17(){
     }
 }
 
+function answerDay18(){
+    key = document.getElementById('answer').value
+    hashed_key = Math.abs(hash(key)).toString()
+    if(hash(hashed_key) == '-2162318909'){
+        new_key = hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString()
+        decryptDay18(parseInt(new_key.substring(0, 16)))
+    }else{
+        closeModal()
+    }
+}
+
+function answerDay19(){
+    key = document.getElementById('answer').value
+    hashed_key = Math.abs(hash(key)).toString()
+    if(hash(hashed_key) == '3701798438'){
+        new_key = hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString()
+        decryptDay19(parseInt(new_key.substring(0, 16)))
+    }else{
+        closeModal()
+    }
+}
+
+function answerDay20(){
+    key = document.getElementById('answer').value
+    hashed_key = Math.abs(hash(key)).toString()
+    if(hash(hashed_key) == '-1974170476'){
+        new_key = hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString()
+        decryptDay20(parseInt(new_key.substring(0, 16)))
+    }else{
+        closeModal()
+    }
+}
+
+function answerDay21(){
+    key = document.getElementById('answer').value
+    hashed_key = Math.abs(hash(key)).toString()
+    if(hash(hashed_key) == '3817979789'){
+        new_key = hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString()
+        decryptDay21(parseInt(new_key.substring(0, 16)))
+    }else{
+        closeModal()
+    }
+}
+
+function answerDay22(){
+    key = document.getElementById('answer').value
+    hashed_key = Math.abs(hash(key)).toString()
+    if(hash(hashed_key) == '-2185371373'){
+        new_key = hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString()
+        decryptDay22(parseInt(new_key.substring(0, 16)))
+    }else{
+        closeModal()
+    }
+}
+
+function answerDay23(){
+    key = document.getElementById('answer').value
+    hashed_key = Math.abs(hash(key)).toString()
+    if(hash(hashed_key) == '4650164744'){
+        new_key = hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString()
+        decryptDay23(parseInt(new_key.substring(0, 16)))
+    }else{
+        closeModal()
+    }
+}
+
+function answerDay24(){
+    key = document.getElementById('answer').value
+    hashed_key = Math.abs(hash(key)).toString()
+    if(hash(hashed_key) == '-2219541893'){
+        new_key = hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString()
+        decryptDay24(parseInt(new_key.substring(0, 16)))
+    }else{
+        closeModal()
+    }
+}
+
+function answerDay25(){
+    key = document.getElementById('answer').value
+    hashed_key = Math.abs(hash(key)).toString()
+    if(hash(hashed_key) == '50454103'){
+        new_key = hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString() + hashed_key.toString()
+        decryptDay25(parseInt(new_key.substring(0, 16)))
+    }else{
+        closeModal()
+    }
+}
+
 function quizDay1(){
     openModal()
     document.getElementById('quizText').textContent = '우리가 처음 사귄 날은? (YYYYMMDD)'
@@ -323,49 +411,49 @@ function quizDay17(){
 
 function quizDay18(){
     openModal()
-    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('quizText').textContent = '내가 예지한테 준 첫 번째 선물은?'
     document.getElementById('submitAnswer').addEventListener('click', answerDay18);
 }
 
 function quizDay19(){
     openModal()
-    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('quizText').textContent = '우리가 일본에서 처음으로 간 음식점은?'
     document.getElementById('submitAnswer').addEventListener('click', answerDay19);
 }
 
 function quizDay20(){
     openModal()
-    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('quizText').textContent = '내가 예지의 관심을 끌려고 3화까지 본 드리마는?'
     document.getElementById('submitAnswer').addEventListener('click', answerDay20);
 }
 
 function quizDay21(){
     openModal()
-    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('quizText').textContent = '예지랑 내가 처음 본 영화는?'
     document.getElementById('submitAnswer').addEventListener('click', answerDay21);
 }
 
 function quizDay22(){
     openModal()
-    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('quizText').textContent = '내가 예지에게 준 100일 선물은?'
     document.getElementById('submitAnswer').addEventListener('click', answerDay22);
 }
 
 function quizDay23(){
     openModal()
-    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('quizText').textContent = '사랑해.'
     document.getElementById('submitAnswer').addEventListener('click', answerDay23);
 }
 
 function quizDay24(){
     openModal()
-    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('quizText').textContent = '지금 예지 옆에는 누가 있어?'
     document.getElementById('submitAnswer').addEventListener('click', answerDay24);
 }
 
 function quizDay25(){
     openModal()
-    document.getElementById('quizText').textContent = '우리가 처음 간 식당은?'
+    document.getElementById('quizText').textContent = '25일간 즐거웠어?'
     document.getElementById('submitAnswer').addEventListener('click', answerDay25);
 }
 
