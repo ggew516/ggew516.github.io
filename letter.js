@@ -314,7 +314,7 @@ function decryptDay24(key){
 
 function decryptDay25(key){
     (async () => {
-        encryptedText = 'xi/EFoE5OLHQqB0+UGQLuCDzuIae6eV4d9aLe36u/j3QvFBklQqjOScaa18u/Hjgl4nzq/PIQyWtevEQEUNPiwjmJzIaAqKkgMaRTYfBV5QatIwiuU3JBws9udUESu5AHSfi5H9sAGwv59XpAtO3jSnPA6UDIXCJ+/PR1tvoW4E2w7/DgfY5uqcV1yu46gfsXKEpjoByXpU1UmfoBAdozx3lG5r32P9na3P6OiJBuEbaCVd5KQRPaysmGfxZFrAyyDyje/gHG8YpOPnP3m/qo/V44/mqtmWRPgyCVR0GkDkPGoF1gvYZK7Hgc3P+YikZawlY13p5/gh5A2rpVidN7Pos4RZ0AlfM9Dmbmfwp80I='  
+        encryptedText = 'YCet3sjOcLK+InHPJzjZEwkX1BsOhZ61hFvuxoRxKZak+s2M9sM7IRUDHhedcKtCQeNIr8lxPeCKM8rnpB0FdqViqAYUNCGW575KGZn6RojIUoSEdjdTAtFOxh1zid9/SB5Xzbff7G+KK630zJToXQWDC3HMEeO+4P9DNlWHWG8AeX8sduB5uj/wVzsvMY8+fj/kdee/47qpjjChhEWUwcYJJJIZbirEipXsMVrVjSkXIW4d/kxJPyQO5JAQrCd1KsL560tVsk4mJTjWE/AenPgund0+Z3KHwp/RzYxiIctiqZ716OLlSDqaYEtI1jtA/AdksF9CQ+t4q0/+FD3e+z7mnnK4J+IRBshZ6uwUgxFUEyaGDCl2nB8xw2+nUs55GPzv2aAiv9RuLa+ewUPq602gAqKafYXyCB3kWA+LDQbyLJtSwdqDoKIgRhd/N9iw5aJJlvsAfZ/h7qbFTI2RUMD5wovU6ptlldypC8brhJIp41QgOq5lUnnnfpKmcbIDkV/QMu3M2QBhE6ERrQYWEQ=='  
     
         const decryptedText = await decryptText(encryptedText, key);
         console.log("복호화된 텍스트:", decryptedText);
